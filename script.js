@@ -13,7 +13,9 @@ var map = new L.Map('map', {
     zoom: 8,
     maxZoom: 8,
     minZoom: 8,
-    zoomControl: false
+    zoomControl: false,
+    scrollWheelZoom: false,
+    touchZoom: false,
 });
 
 map.on('locationerror', function () {
