@@ -5,8 +5,9 @@ for (var i=1; i<=48; i++) {
    var out = 'build/' + date + "-2.gif";
    var gm = require('gm') || console.log("npm install gm");
    
-   datet = ((i>31) ? (i-31) + ' JUIN' : i + ' MAI') + ' 2016'
-   
+   //datet = ((i>31) ? (i-31) + ' JUIN' : i + ' MAI') + ' 2016'
+   datet = ((i>31) ? (i-31) + ' 6' : i + ' 5') + ' 2016'
+
    gm("build/"+date+".png")
        .rotate('transparent', -13.5)
        .gravity('North')
