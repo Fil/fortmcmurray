@@ -62,7 +62,7 @@ function bete_ou_back() {
 
         setTimeout(function () {
             document.getElementById("button")
-                .innerHTML = "<button class=back onclick='bete_ou_back()'>Back to / Retour à Fort McMurray, Canada</button>";
+                .innerHTML = "<button class=back onclick='bete_ou_back()'>" + lang.retour + "</button>";
         }, 3000);
     } else {
         map.setView(fortmm);
@@ -70,7 +70,7 @@ function bete_ou_back() {
             .innerHTML = '';
         setTimeout(function () {
             document.getElementById("button")
-                .innerHTML = "<button class=bete onclick='bete_ou_back()'>Téléportez la Bête chez vous<br>Bring the Beast to your home</button>";
+                .innerHTML = "<button class=bete onclick='bete_ou_back()'>"+ lang.teleportez + "</button>";
         }, 1500);
     }
 
