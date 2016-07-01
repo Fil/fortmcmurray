@@ -16,4 +16,5 @@ done
 # gm convert ne gere pas le disposal transparent :(
 #gm convert -loop 0 -delay 30 build/2016*.png build/wildfire.gif
 
-gifsicle --disposal 3 --delay 30 --loopcount=0 build/*-2.gif -o wildfire.gif
+gifsicle --disposal 3 --delay 30 --loopcount=0 build/*-fr.gif -o wildfire.fr.gif
+gifsicle --disposal 3 --delay 30 --loopcount=0 build/*-en.gif -o wildfire.en.gif

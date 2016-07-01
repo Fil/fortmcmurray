@@ -13,7 +13,9 @@ var map = new L.Map('map', {
     zoom: 8,
     maxZoom: 8,
     minZoom: 8,
-    zoomControl: false
+    zoomControl: false,
+    scrollWheelZoom: false,
+    touchZoom: false,
 });
 
 map.on('locationerror', function () {
@@ -60,7 +62,7 @@ function bete_ou_back() {
 
         setTimeout(function () {
             document.getElementById("button")
-                .innerHTML = "<button class=back onclick='bete_ou_back()'>Retour à Fort McMurray, Canada</button>";
+                .innerHTML = "<button class=back onclick='bete_ou_back()'>" + lang.retour + "</button>";
         }, 3000);
     } else {
         map.setView(fortmm);
@@ -68,7 +70,7 @@ function bete_ou_back() {
             .innerHTML = '';
         setTimeout(function () {
             document.getElementById("button")
-                .innerHTML = "<button class=bete onclick='bete_ou_back()'>Et si la Bête était chez vous ?</button>";
+                .innerHTML = "<button class=bete onclick='bete_ou_back()'>"+ lang.teleportez + "</button>";
         }, 1500);
     }
 
