@@ -11,9 +11,9 @@ for (var i=1; i<=48; i++) {
        if (jour ==1) jour = '1er';
        datet = (jour + ' ' + (mois == 6 ? 'juin' : 'mai')) + ' 2016'
    } else {
-       if (jour%10 == 1) jour += 'st';
-       else if (jour%10 == 2) jour += 'nd';
-       else if (jour%10 == 3) jour += 'rd';
+       if (jour%20 == 1) jour += 'st';
+       else if (jour%20 == 2) jour += 'nd';
+       else if (jour%20 == 3) jour += 'rd';
        else jour += 'th';
        datet = ((mois == 6 ? 'June' : 'May') + ' ' + jour) + ', 2016'
    }
