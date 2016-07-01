@@ -9,13 +9,13 @@ for (var i=1; i<=48; i++) {
    var jour = (i>31) ? (i-31) : i, mois =  (i>31) ? 6 : 5;
    if (lang == 'fr') {
        if (jour ==1) jour = '1er';
-       datet = (jour + ' ' + (mois == 6 ? 'JUIN' : ' MAI')) + ' 2016'
+       datet = (jour + ' ' + (mois == 6 ? 'juin' : 'mai')) + ' 2016'
    } else {
        if (jour%10 == 1) jour += 'st';
        else if (jour%10 == 2) jour += 'nd';
        else if (jour%10 == 3) jour += 'rd';
        else jour += 'th';
-       datet = ((mois == 6 ? 'JUNE' : 'MAY') + ' ' + jour) + ', 2016'
+       datet = ((mois == 6 ? 'June' : 'May') + ' ' + jour) + ', 2016'
    }
 
    gm("build/"+date+".png")
