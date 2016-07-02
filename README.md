@@ -1,5 +1,10 @@
 # Fort McMurray: et si c'était chez vous ?
 
+## Publication
+
+- http://fortmacandthebeast.com/
+- http://visionscarto.net/fort-mcmurray-et-l-incendie
+
 ## Sources
 
 http://cwfis.cfs.nrcan.gc.ca/carte-interactive?zoom=5&lon=-949823.20053316&lat=943970.57121972&month=05&day=24&year=2016#wb-cont
