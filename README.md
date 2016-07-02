@@ -16,6 +16,6 @@
 
 ## Étapes
 
-- j'ai créé un gif animé qui contient l'extension du feu jour par jour du 1er mai au 30 juin 2016.
+- j'ai créé un gif animé qui contient l'extension du feu jour par jour du 1er mai au 17 juin 2016.
 - une carte en-dessous, centrée sur Fort MM
 - un bouton "localisez-moi" qui déplace la carte en fonction de la position du visiteur
