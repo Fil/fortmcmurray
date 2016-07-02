@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fort McMurray: le feu chez vous</title>
+    <!--
+    
+    Carte réalisée par Philippe Rivière
+    http://visionscarto.net/
+    
+    // -->
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+
+    <link rel="stylesheet" href="leaflet.css" />
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Chrome/Safari/Opera */
+            -khtml-user-select: none;
+            /* Konqueror */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                  not supported by any browser */
+        }
+        
+        #fire {
+            position: absolute;
+            top: 0;
+            z-index: 401;
+            pointer-events: none;
+        }
+        
+        #fireimg {
+            position: absolute;
+            opacity: 0.5;
+        }
+        
+        #map {
+            position: absolute;
+            top: -12.5%;
+            left: -12.5%;
+            width: 125%;
+            height: 125%;
+            background: black;
+        }
+        
+        #button {
+            position: absolute;
+            top: 20px;
+            width: 386px;
+            z-index: 402;
+        }
+        
+        button.bete {
+            background: #bbb;
+            color: black;
+            border: solid #f59323 3px;
+            font-size: x-large;
+            padding: 3px;
+            cursor: pointer;
+        }
+        
+        button.back {
+            background: #bbb;
+            color: black;
+            border: solid grey 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="fire"><img id="fireimg" src="wildfire.fr.gif" width=1170 height=830>
+    </div>
+    <div id="button"></div>
+
+    <script src="leaflet.js"></script>
+    <script>var lang = {
+    teleportez: "Et si le feu était chez vous ?",
+    retour: "Retour à Fort McMurray, Canada",
+    image: "wildfire.fr.gif",
+    }
+    </script>
+    <script src="script-blanc.js"></script>
+    <script src="geolocip.php"></script>
+</body>
+
+</html>
